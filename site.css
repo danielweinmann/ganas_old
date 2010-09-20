@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" ""; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: ""; }
+
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+a img {
+  border: none; }
+
+ul {
+  margin-left: 0; }
+  ul li {
+    list-style-type: none;
+    margin-left: 0px; }
+
+body.site {
+  background: url(logo.jpg) no-repeat top center;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4em;
+  font-family: GillSans, Calibri, Trebuchet, Sans, sans-serif;
+  color: black;
+  text-align: center; }
+  body.site a {
+    color: black; }
+  body.site a:hover {
+    color: #be0000; }
+  body.site input, body.site textarea {
+    border: 1px solid #eeeeee;
+    font-size: 0.9em; }
+  body.site input:focus, body.site textarea:focus {
+    background: #eeeeee; }
+  body.site h1, body.site h2, body.site h3, body.site h4, body.site h5 {
+    color: #be0000;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-style: italic;
+    margin: 0 0 10px 0; }
+  body.site h2 {
+    font-size: 1.4em;
+    margin: 0 0 22px 0; }
+  body.site h3 {
+    font-size: 1.2em; }
+  body.site h4 {
+    color: white;
+    font-size: 1em; }
+  body.site .hide {
+    display: none; }
+  body.site .clear {
+    clear: both; }
+  body.site .center {
+    text-align: center; }
+  body.site .left {
+    text-align: left; }
+  body.site #mailee {
+    margin-top: 400px; }
+
