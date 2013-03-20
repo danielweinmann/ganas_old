@@ -103,12 +103,72 @@ body
             border-left: 47px solid transparent
             border-right: 47px solid transparent
     &.status
-      background: $cream
-      height: 500px
-    &.next
+      background: $light_cream
+      h2
+        +grid(8)
+        +grid-suffix(4)
+        +alpha
+        color: $brown
+        font-family: 'Lobster', cursive
+        font-weight: 400
+        margin-bottom: 24px
+      .number
+        font-family: 'Abel', sans-serif
+        font-size: 48px
+        color: $dark_brown
+        &.to_go
+          color: $red
+        &.success
+          color: $green
+      span.asterisk
+        font-size: 10px
+        vertical-align: super
+      .remaining_days, .leaders_to_go, .followers_to_go
+        +grid(4)
+        padding: 20px 0
+        text-align: center
+        +border-radius(6px)
+        background: $cream
+        color: $brown
+        border: 5px solid $dark_cream
+        width: 290px
+      .remaining_days
+        +alpha
+      .followers_to_go
+        +omega
+      .call_to_action
+        +grid(6)
+        +alpha
+        +grid-prefix(3)
+        +grid-suffix(3)
+        margin: 20px 0
+      .observations
+        +grid(12)
+        +alpha
+        font-style: italic
+        font-size: 14px
+        line-height: 18px
+    &.where
       background: $light_brown
-      height: 500px
-    &.next_next
+      .text
+        +grid(6)
+        +alpha
+        h3
+          color: $dark_brown
+          font-family: 'Lobster', cursive
+          font-weight: 400
+        img
+          +grid(2)
+          border: 3px solid $white
+          width: 134px
+          &.first
+            +alpha
+          &.last
+            +omega
+      .map
+        +grid(6)
+        +omega
+    &.about_us
       background: $dark_red
       height: 500px
       
