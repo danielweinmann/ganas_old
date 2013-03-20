@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta name="robots" content="index, follow"
+    meta name="author" content="Laura Rosa & Daniel Weinmann"
+    meta name="description" content="Fique por dentro do que acontece no tango de Porto Alegre! Qualquer pessoa pode adicionar um evento de tango que aconteça em Porto Alegre. Desse jeito, todo mundo fica sabendo das milongas, práticas, shows, aulas, etc, da cidade. E o tango porto-alegrense só cresce!"
+    meta property="og:title" content="Fique por dentro do que acontece no tango de Porto Alegre!"
+    meta property="og:type" content="website"
+    meta property="og:url" content=(root_url)
+    meta property="og:image" content=="#{request.protocol}#{request.host_with_port}#{image_path("logo.png")}"
+    meta property="og:site_name" content="Ganas"
+    meta property="og:description" content="Qualquer pessoa pode adicionar um evento de tango que aconteça em Porto Alegre. Desse jeito, todo mundo fica sabendo das milongas, práticas, shows, aulas, etc, da cidade. E o tango porto-alegrense só cresce!"
+    meta property="fb:admins" content="567237711"
+    title Ganas
+    = stylesheet_link_tag "application"
+    link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'
+    link rel="shortcut icon" href==image_path('favicon.png')
+    = javascript_include_tag "application" 
+    = csrf_meta_tags
+  body
+    div id="fb-root"
+    javascript:
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=165877740121884";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    #header
+      #logo
+        = link_to image_tag('logo.jpg', alt: "Ganas", title: "Ganas"), :root
+      #social
+        .fb-like data-href="https://www.facebook.com/ganastango" data-send="true" data-width="380" data-show-faces="true" data-font="arial"
+    #content
+      - for key, msg in flash
+        .flash class=key
+          .container
+            .content
+              == msg
+      = yield

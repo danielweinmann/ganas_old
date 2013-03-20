@@ -1,0 +1,25 @@
+@import compass/reset
+@import compass/css3
+@import compass/utilities
+@import 960/grid
+@import standards/colors
+
+body
+  background: $white
+  #header
+    height: 100px
+    +grid-container
+    width: 962px
+    +clearfix
+    overflow: visible
+    #logo
+      +grid(7)
+      img
+        height: 95px
+    #social
+      +grid(5)
+      +omega
+      margin-top: 10px
+      padding: 10px
+      width: 370px
+      height: 68px
