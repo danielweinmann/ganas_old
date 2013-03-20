@@ -1,3 +1,5 @@
+@import compass/css3
+@import compass/utilities
 @import 960/grid
 @import standards/colors
 
@@ -6,7 +8,7 @@ body
     &.video
       background: $black
       color: $gray
-      padding: 32px 0 4px 0
+      padding: 20px 0
       .tagline
         +grid(4)
         +alpha
@@ -26,3 +28,80 @@ body
         +omega
         iframe
           border: 3px solid $white
+    &.what
+      background: #40A1C6
+      color: $white
+      h2
+        color: $white
+        font-family: 'Lobster', cursive
+        font-weight: 400
+        text-align: center
+        margin-bottom: 12px
+      h4
+        color: $white
+        font-weight: 400
+    &.when
+      background: #194659
+      height: 64px
+      h3
+        color: #44B6E4
+        text-align: center
+      .container
+        overflow: visible
+      .content
+        position: relative
+      .how_much
+        .outer
+          position: absolute
+          top: -16px
+          right: 0
+          .top
+            width: 0
+            border-bottom: 30px solid #F5C964
+            border-left: 52px solid transparent
+            border-right: 52px solid transparent
+          .middle
+            width: 104px
+            height: 60px
+            background-color: #F5C964
+            h4
+              padding: 0 8px
+              color: $black
+              text-align: center
+              font-size: 20px
+              line-height: 22px
+          .bottom
+            width: 0
+            border-top: 30px solid #F5C964
+            border-left: 52px solid transparent
+            border-right: 52px solid transparent
+        .inner
+          position: absolute
+          top: -10px
+          right: 0
+          margin-right: 5px
+          .top
+            width: 0
+            border-bottom: 28px solid #F9FFAB
+            border-left: 47px solid transparent
+            border-right: 47px solid transparent
+          .middle
+            width: 95px
+            height: 53px
+            background-color: #F9FFAB
+            h4
+              font-family: 'Abel', sans-serif
+              font-weight: 400
+              color: #B81616
+              padding-top: 4px
+              text-align: center
+              font-size: 20px
+              line-height: 22px
+          .bottom
+            width: 0
+            border-top: 28px solid #F9FFAB
+            border-left: 47px solid transparent
+            border-right: 47px solid transparent
+    &.status
+      background: #E5C188
+      height: 500px
