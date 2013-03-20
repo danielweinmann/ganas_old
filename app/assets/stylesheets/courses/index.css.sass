@@ -1,6 +1,26 @@
+@import 960/grid
 @import standards/colors
 
 body
   .block
     &.video
       background: $black
+      color: $gray
+      padding: 32px 0 4px 0
+      .tagline
+        +grid(4)
+        +alpha
+        h1
+          height: 240px
+        .or
+          font-style: italic
+          font-size: 14px
+          text-align: center
+          margin: 12px 0
+        .not_yet
+          margin-bottom: 0
+      .video_embed
+        +grid(8)
+        +omega
+        iframe
+          border: 3px solid $white
