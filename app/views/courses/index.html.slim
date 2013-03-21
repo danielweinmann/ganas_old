@@ -30,23 +30,20 @@
     .content
       h2 Maaaaas...o curso só acontece se atingirmos o número mínimo de inscritos em tempo hábil
       .remaining_days
-        .text Ainda temos
         .number
           = @remaining_days
         .text= (@remaining_days != 1 ? "dias restantes" : "dia restante")
       .leaders_to_go
-        .text= (@leaders_to_go != 1 ? "Ainda faltam" : "Ainda falta")
         .number class=(@leaders_to_go > 0 ? "to_go" : "success")
           = @leaders_to_go
         .text
-          = (@leaders_to_go != 1 ? "condutores inscritos" : "condutor inscrito")
+          = (@leaders_to_go != 1 ? "condutores faltando" : "condutor faltando")
           span.asterisk *
       .followers_to_go
-        .text= (@followers_to_go != 1 ? "Ainda faltam" : "Ainda falta")
         .number class=(@followers_to_go > 0 ? "to_go" : "success")
           = @followers_to_go
         .text
-          = (@followers_to_go != 1 ? "seguidores inscritos" : "seguidores inscrito")
+          = (@followers_to_go != 1 ? "seguidores faltando" : "seguidores faltando")
           span.asterisk *
       .call_to_action
         a.button href="#" target="_blank" Quero me inscrever agora mesmo! :D
