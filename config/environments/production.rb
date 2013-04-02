@@ -1,6 +1,9 @@
 Ganas::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  # Google Analytics
+  config.middleware.use Rack::GoogleAnalytics, :tracker => 'UA-5421030-11'
+
   # Code is not reloaded between requests
   config.cache_classes = true
 

@@ -7,6 +7,8 @@ gem 'thin'
 gem 'jquery-rails'
 gem 'slim-rails'
 
+gem 'rack-google-analytics'
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'compass-rails'
