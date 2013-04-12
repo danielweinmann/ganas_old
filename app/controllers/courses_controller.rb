@@ -5,7 +5,7 @@ class CoursesController < ApplicationController
     @remaining_days = (@deadline.to_date - Time.now.to_date).to_i
     @remaining_days = 0 if @remaining_days < 0
     @leaders_to_go = 2
-    @followers_to_go = 2
+    @followers_to_go = 1
   end
   
 end
