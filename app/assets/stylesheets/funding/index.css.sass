@@ -1,0 +1,84 @@
+@import compass/css3
+@import compass/utilities
+@import 960/grid
+@import standards/colors
+
+body
+  .block
+    &.video
+      h1
+        .separator
+          line-height: 24px
+      background: $black
+      color: $gray
+      padding: 20px 0
+      .tagline
+        +grid(4)
+        +alpha
+        h1
+          height: 318px
+      .video_embed
+        +grid(8)
+        +omega
+        iframe
+          border: 3px solid $white
+    &.what
+      background: $blue
+      border-bottom: 12px solid $dark_blue
+      color: $white
+      h2
+        color: $white
+        font-family: 'Lobster', cursive
+        font-weight: 400
+        text-align: center
+        margin-bottom: 20px
+      h4
+        color: $white
+        font-weight: 400
+        line-height: 30px
+        margin-bottom: 20px
+        &.last
+          margin-bottom: 0px
+    &.status
+      background: $light_cream
+      color: $brown
+      .number
+        font-family: 'Abel', sans-serif
+        font-size: 48px
+        line-height: 72px
+        color: $dark_brown
+        .per_month
+          color: $brown
+          font-size: 24px
+          line-height: 24px
+        &.to_go
+          color: $red
+        &.success
+          color: $green
+      .goal, .current_amount, .total_backers
+        +grid(4)
+        padding: 20px 0
+        text-align: center
+        +border-radius(6px)
+        background: $cream
+        border: 5px solid $dark_cream
+        width: 290px
+      .goal
+        +alpha
+      .total_backers
+        +omega
+      .call_to_action
+        +grid(6)
+        +alpha
+        +grid-prefix(3)
+        +grid-suffix(3)
+        margin-top: 48px
+    &.rewards
+      background: $light_brown
+      line-height: 24px
+      h3
+        color: $dark_brown
+        font-size: 20px
+        text-align: center
+      em
+        font-style: italic
