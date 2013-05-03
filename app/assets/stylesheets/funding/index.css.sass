@@ -5,7 +5,7 @@
 
 body
   .block
-    &.video
+    &#video
       h1
         .separator
           line-height: 24px
@@ -22,7 +22,7 @@ body
         +omega
         iframe
           border: 3px solid $white
-    &.what
+    &#what
       background: $blue
       border-bottom: 12px solid $dark_blue
       color: $white
@@ -37,9 +37,23 @@ body
         font-weight: 400
         line-height: 30px
         margin-bottom: 20px
-        &.last
-          margin-bottom: 0px
-    &.status
+      ul.menu
+        +horizontal-list
+        margin-top: 28px
+        li
+          margin-right: 15px
+          &:last-child
+            margin-right: 0
+          a
+            display: block
+            font-size: 16px
+            padding: 6px 12px
+            background: $medium_blue
+            +border-radius(3px)
+            color: $white
+            &:hover
+              background: $light_blue
+    &#status
       background: $light_cream
       color: $brown
       border-bottom: 6px solid $brown
@@ -78,7 +92,7 @@ body
         font-style: italic
         font-size: 14px
         line-height: 22px
-    &.rewards
+    &#rewards
       background: $light_brown
       line-height: 24px
       ol
