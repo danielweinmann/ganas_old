@@ -6,14 +6,14 @@
           |Ganas de atingir nosso melhor.
           .separator &nbsp
           |E dividir.
-        a.button href="http://ganastango.wufoo.com/forms/apoio-mensal-para-laura-rosa-e-daniel-weinmann/" target="_blank" Quero realizar este sonho
+        a.button href="#rewards" Quero realizar este sonho
       .video_embed
         iframe src="http://player.vimeo.com/video/63141339?title=0&amp;byline=0&amp;portrait=0&amp;color=9f090b" width="614" height="354" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
 .block.what
   .container
     .content
       h2 Ajude um lindo casal a atingir seu potencial
-      h4 Queremos nos dedicar exclusivamente aos estudos de tango durante 5 anos. Nosso objetivo é virarmos bailarinos de nível mundial, e não pararemos enquanto não chegarmos lá. Nem depois :D
+      h4 Queremos nos dedicar exclusivamente aos estudos de tango. Nosso objetivo é virarmos bailarinos de nível mundial, e não pararemos enquanto não chegarmos lá. Nem depois :D
       h4.last Para isto, precisamos deixar nossos trabalhos atuais e viajar com frequência atrás de maestros. E a única maneira de darmos este passo é contando com uma rede de amigos que nos apoie todo mês.
 .block.status
   .container
@@ -22,7 +22,9 @@
         .number
           = "R$ #{@goal}"
           span.per_month= "/mês"
-        .text é nossa meta
+        .text
+          | é nossa meta
+          span.asterisk *
       .current_amount
         .number.to_go
           = "R$ #{@current_amount}"
@@ -32,24 +34,29 @@
         .number.success
           = "#{@total_backers}"
         .text são nossos apoiadores
-      .call_to_action
-        a.button href="http://ganastango.wufoo.com/forms/apoio-mensal-para-laura-rosa-e-daniel-weinmann/" target="_blank" Quero apoiar com pelo menos R$ 10/mês :D
-.block.rewards
+      .observations
+        span.asterisk *
+        | É a partir deste valor que poderemos deixar totalmente nossos trabalhos atuais e viajar a Buenos Aires a cada 3 meses para fazer aulas. No entanto, cada Real apoiado equivale a um pouco mais de tempo que poderemos dedicar ao tango. Um passo por vez, a gente chega lá! :D
+.block.rewards#rewards
   .container
     .content
       h3 E o que a gente oferece em troca de tanto amor?
-      p
-        | Nos últimos anos, a gente vem colocando uma energia forte e genuína pra unir e expandir a comunidade tanguera em Porto Alegre, com projetos como a 
-        a href="http://www.facebook.com/events/186458758130963/" target="_blank" Prática no apê
-        |, o 
-        a href="http://www.facebook.com/tangocccev" target="_blank" Tango no CCCEV
-        |  e a 
-        a href="http://www.facebook.com/events/509347605769561/" target="_blank" Milonga ao pôr-do-sol no terraço da CCMQ
-        | . 
-        em Prometemos manter esta vivacidade e nos doar cada vez mais para a comunidade.
-      p
-        | Além disso, prometemos dividir tudo que aprendermos: a partir do momento em que atingirmos nossa meta, vamos lançar 
-        em 1 videoaula por mês, super produzida e super didática
-        |. As aulas, claro, serão abertas e livres, como tudo o que fazemos.
-      p A gente acredita que a dança, especialmente o tango, pode mudar o mundo. E temos certeza que ao desenvolver o nosso potencial iremos devolver coisas que ainda não temos ideia para a comunidade. Ainda não sabemos o que serão, mas temos certeza que vão ser coisas boas e transformadoras!
-      p Por último, e talvez mais importante, oferecemos nossa eterna gratidão. MUITO OBRIGADO, de coração! :D
+      ol
+        li
+          | Nos últimos anos, a gente vem colocando uma energia forte e genuína pra unir e expandir a comunidade tanguera em Porto Alegre, especialmente a partir do surgimento do 
+          a href="http://www.facebook.com/tangocccev" target="_blank" Tango no CCCEV
+          | . 
+          em Prometemos manter esta vitalidade e nos doar cada vez mais para a comunidade.
+        li
+          | Além disso, prometemos dividir 100% do que aprendermos: a partir do momento em que atingirmos nossa meta, vamos lançar 
+          em 1 videoaula de 30min por mês, super produzida e super didática
+          |. As aulas, claro, serão abertas e livres, como tudo o que fazemos.
+        li
+          | Onde quer que estejamos, 
+          em nós vamos dançar tango na rua pelo menos uma vez por semana
+          |. Queremos doar tanto nossa arte quanto vocês doam para nós.
+        li Para apoios a partir de R$ 200/mês, seu nome (ou sua marca) aparecerá como patrocinador oficial das videoaulas que lançarmos, em tantos vídeos quanto o número de meses que você estiver conosco.
+        li A gente acredita que a dança, especialmente o tango, pode mudar o mundo. E temos certeza que ao desenvolver o nosso potencial iremos devolver coisas que ainda não temos ideia para a comunidade. Ainda não sabemos o que serão, mas temos certeza que vão ser coisas boas e transformadoras!
+        li Por último, e talvez mais importante, oferecemos nossa eterna gratidão. MUITO OBRIGADO, de coração! :D
+      .call_to_action
+        a.button href="http://ganastango.wufoo.com/forms/apoio-mensal-para-laura-rosa-e-daniel-weinmann/" target="_blank" Quero apoiar com pelo menos R$ 10/mês :D
