@@ -4,6 +4,30 @@
 @import standards/colors
 
 body
+  #back_to_top
+    z-index: 2
+    display: none
+    position: fixed
+    top: 24px
+    right: 24px
+    color: white
+    display: block
+    text-indent: -9999px
+    width: 45px
+    height: 45px
+    background: #464646 url(image_path("back_to_top.png")) no-repeat center top
+    -webkit-border-radius: 8px
+    -moz-border-radius: 8px
+    -ms-border-radius: 8px
+    -o-border-radius: 8px
+    border-radius: 8px
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4)
+    &:hover
+      background-color: #606060
+    &:active
+      background-color: $dark_red
   .block
     &#video
       h1
@@ -121,3 +145,7 @@ body
         +grid-prefix(3)
         +grid-suffix(3)
         margin-top: 32px
+    &#backers
+    &#about_us
+      background: $dark_red
+    &#faq
