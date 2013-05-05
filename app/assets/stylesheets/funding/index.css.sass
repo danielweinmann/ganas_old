@@ -120,7 +120,6 @@ body
         line-height: 22px
     &#rewards
       background: $light_brown
-      border-bottom: 5px solid $orange
       line-height: 24px
       ol
         margin-top: 20px
@@ -170,18 +169,45 @@ body
     &#about_us
       background: $dark_red
       color: $white
+      line-height: 26px
+      hr
+        clear: both
+        border: 0
+        height: 72px
+        background: url(image_path("hr.png")) 50% 24px no-repeat
       .photo
-        float: right
-        img
-          +grid(4)
-          +omega
         .credit
           color: $gray
           text-align: right
           font-size: 14px
           line-height: 30px
+          a
+            color: $gray
+            font-weight: 400
+            font-size: 14px
+            line-height: 30px
+            text-decoration: underline
+            &:hover
+              color: $white
+        img
+          border: 3px solid $white
+        &.couple
+          float: right
+          img
+            width: 214px
+            margin-left: 20px
+        &.laura
+          float: left
+          img
+            width: 134px
+            margin-right: 20px
+        &.daniel
+          float: right
+          img
+            width: 134px
+            margin-left: 20px
     &#faq
-      background: $black
+      background: $dark_cream
       h3
-        color: $light_gray
+        color: $brown
         font-size: 20px
