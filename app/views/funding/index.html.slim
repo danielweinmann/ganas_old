@@ -44,7 +44,9 @@
       .total_backers
         .number.success
           = "#{@total_backers}"
-        .text são nossos apoiadores
+        .text
+          | são 
+          a.anchor href="#backers" nossos apoiadores
       .observations
         span.asterisk *
         | É a partir deste valor que poderemos deixar totalmente nossos trabalhos atuais e viajar a Buenos Aires a cada 3 meses para fazer aulas. No entanto, cada Real apoiado equivale a um pouco mais de tempo que poderemos dedicar ao tango. Um passo por vez, a gente chega lá! :D
@@ -67,7 +69,7 @@
           em nós vamos dançar tango na rua pelo menos uma vez por semana
           |. Queremos doar tanto nossa arte quanto vocês doam para nós.
         li
-          | Para apoios a partir de R$ 200/mês, seu nome (ou sua marca) aparecerá como 
+          | Para apoios a partir de R$ 200/mês, seu nome aparecerá, junto com sua foto, como 
           em patrocinador oficial das videoaulas
           |  que lançarmos, em tantos vídeos quanto o número de meses que você estiver conosco.
         li A gente acredita que a dança, especialmente o tango, pode mudar o mundo. E temos certeza que ao desenvolver o nosso potencial iremos devolver coisas que ainda não temos ideia para a comunidade. Ainda não sabemos o que serão, mas temos certeza que vão ser coisas boas e transformadoras!
@@ -77,15 +79,32 @@
 .block#backers
   .container
     .content
+      h3 Nossos apoiadores
+      ul
+        li
+          a href="https://twitter.com/felipebcabral" target="_blank"
+            .photo
+              img src="http://estaleiroliberdade.com.br/wp-content/uploads/2012/07/pirata-cabral.jpg" title="Felipe Cabral" alt="Felipe Cabral" style="width: 240px; margin-left: -20px"
+            .name Felipe Cabral
+        li
+          a href="http://www.facebook.com/oswaldooliveirao2" target="_blank"
+            .photo
+              img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-snc7/392638_10150668763047004_488367457_n.jpg" title="Oswaldo Oliveira" alt="Oswaldo Oliveira" style="width: 366px; margin-left: -150px"
+            .name Oswaldo Oliveira
 .block#about_us
   .container
     .content
+      | A gente se conheceu dançando.
+      .photo
+        img src="http://sphotos-a.ak.fbcdn.net/hphotos-ak-ash4/390890_314595765241249_106201736_n.jpg" alt="Foto por Clarissa Virmond" title="Foto por Clarissa Virmond"
+        .credit Foto por Clarissa Virmond
       / Histórico do Daniel (incluindo como o bixo do tango picou) (incluindo "dizer que construi o Catarse, que o Catarse ajudou centenas de artistas e que tudo o que eu quero agora é poder te dedicar à arte também")
       / Histórico da Laura (incluindo como o bixo do tango picou)
       / Histórico do casal (como nos conhecemos, como nos demos conta que o que o tango nos une como casal também)
 .block#faq
   .container
     .content
+      h3 Perguntas frequentes
       / Por que pedir?
       / Por que vocês?
       / Por que nível mundial?

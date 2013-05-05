@@ -15,7 +15,7 @@ body
     text-indent: -9999px
     width: 45px
     height: 45px
-    background: #464646 url(image_path("back_to_top.png")) no-repeat center top
+    background: $medium_gray url(image_path("back_to_top.png")) no-repeat center top
     -webkit-border-radius: 8px
     -moz-border-radius: 8px
     -ms-border-radius: 8px
@@ -48,7 +48,6 @@ body
           border: 3px solid $white
     &#what
       background: $blue
-      border-bottom: 12px solid $dark_blue
       color: $white
       h2
         color: $white
@@ -80,7 +79,10 @@ body
     &#status
       background: $light_cream
       color: $brown
-      border-bottom: 6px solid $brown
+      a
+        color: $brown
+        font-weight: 400
+        text-decoration: underline
       .number
         font-family: 'Abel', sans-serif
         font-size: 48px
@@ -118,6 +120,7 @@ body
         line-height: 22px
     &#rewards
       background: $light_brown
+      border-bottom: 5px solid $orange
       line-height: 24px
       ol
         margin-top: 20px
@@ -146,6 +149,39 @@ body
         +grid-suffix(3)
         margin-top: 32px
     &#backers
+      background: $white
+      h3
+        font-family: 'Lobster', cursive
+        font-weight: 400
+        font-size: 32px
+        color: $brown
+      ul
+        +horizontal-list
+        margin-top: 20px
+        li
+          margin-right: 16px
+          .photo
+            text-align: center
+            width: 100px
+            height: 100px
+            overflow: hidden
+            margin: 8px auto
+            +border-radius(50px)
     &#about_us
       background: $dark_red
+      color: $white
+      .photo
+        float: right
+        img
+          +grid(4)
+          +omega
+        .credit
+          color: $gray
+          text-align: right
+          font-size: 14px
+          line-height: 30px
     &#faq
+      background: $black
+      h3
+        color: $light_gray
+        font-size: 20px
