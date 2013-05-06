@@ -173,7 +173,7 @@ body
       hr
         clear: both
         border: 0
-        height: 72px
+        height: 92px
         background: url(image_path("hr.png")) 50% 24px no-repeat
       .photo
         .credit
@@ -221,3 +221,16 @@ body
           margin-bottom: 16px
           p
             line-height: 24px
+          iframe.reference
+            +grid(4)
+            margin-bottom: 24px
+            &.first
+              +alpha
+            &.last
+              +omega
+      .call_to_action
+        +grid(6)
+        +alpha
+        +grid-prefix(3)
+        +grid-suffix(3)
+        margin-top: 32px
