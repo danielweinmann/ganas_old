@@ -139,8 +139,6 @@ body
         color: $dark_brown
         font-size: 20px
         text-align: center
-      em
-        font-style: italic
       .call_to_action
         +grid(6)
         +alpha
@@ -169,7 +167,14 @@ body
     &#about_us
       background: $dark_red
       color: $white
-      line-height: 26px
+      font-size: 16px
+      line-height: 23px
+      a
+        color: $white
+        font-weight: 400
+        text-decoration: underline
+        &:hover
+          color: $orange
       hr
         clear: both
         border: 0
@@ -203,9 +208,14 @@ body
             margin-right: 20px
         &.daniel
           float: right
+          margin-bottom: 38px
           img
             width: 134px
             margin-left: 20px
+      .signature
+        font-style: italic
+        text-align: right
+        margin-top: 16px
     &#faq
       background: $dark_cream
       h3
