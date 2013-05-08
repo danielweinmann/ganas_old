@@ -2,19 +2,15 @@
   .container
     .content
       .tagline
-        h1
-          |Ganas de atingir nosso melhor.
-          .separator &nbsp
-          |E dividir.
-        a.button.anchor href="#rewards" Quero realizar este sonho
+        h1 Ganas de compartilhar um tango cada vez melhor
       .video_embed
         iframe src="http://player.vimeo.com/video/63141339?title=0&amp;byline=0&amp;portrait=0&amp;color=9f090b" width="614" height="354" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
 .block#what
   .container
     .content
-      h2 Ajude um lindo casal a atingir seu potencial
-      h4 Queremos nos dedicar exclusivamente aos estudos de tango. Nosso objetivo é virarmos bailarinos de nível mundial, e não pararemos enquanto não chegarmos lá. Nem depois :D
-      h4 Para isto, precisamos deixar nossos trabalhos atuais e viajar com frequência atrás de maestros. E a única maneira de darmos este passo é contando com uma rede de amigos que nos apoie todo mês.
+      h2 Ajude um lindo casal a dedicar a vida ao tango
+      h4 Queremos dedicar nossa vida ao tango e à comunidade tanguera. Nosso objetivo é estar sempre aprendendo e compartilhando 100% deste conhecimento, de forma aberta e gratuita.
+      h4 Para isto, queremos deixar nossos trabalhos atuais e viajar com frequência atrás de maestros. E decidimos dar este passo contando com uma comunidade que nos apoia todo mês.
       ul.menu
         li
           a.anchor href="#about_us" Quem somos
@@ -33,9 +29,7 @@
         .number
           = "R$ #{@goal}"
           span.per_month= "/mês"
-        .text
-          | é nossa meta
-          span.asterisk *
+        .text é nossa meta
       .current_amount
         .number.to_go
           = "R$ #{@current_amount}"
@@ -47,9 +41,9 @@
         .text
           | são 
           a.anchor href="#backers" nossos apoiadores
-      .observations
-        span.asterisk *
-        | É a partir deste valor que poderemos deixar totalmente nossos trabalhos atuais e viajar a Buenos Aires a cada 3 meses para fazer aulas. No entanto, cada Real apoiado equivale a um pouco mais de tempo que poderemos dedicar ao tango. Um passo por vez, a gente chega lá! :D
+      p.observations
+        em Não precisamos atingir a meta para começar e não há um prazo para alcançá-la. 
+        | Cada apoio que recebermos vai permitir que dediquemos um pouco mais de tempo ao tango e à comunidade. Um passo por vez, a gente chega lá! :D
 .block#rewards
   .container
     .content
