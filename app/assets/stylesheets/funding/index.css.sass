@@ -63,13 +63,13 @@ body
         +horizontal-list
         margin-top: 28px
         li
-          margin-right: 15px
+          margin-right: 16px
           &:last-child
             margin-right: 0
           a
             display: block
             font-size: 16px
-            padding: 6px 12px
+            padding: 6px 14px
             background: $medium_blue
             +border-radius(3px)
             color: $white
@@ -116,9 +116,12 @@ body
         +alpha
         font-size: 16px
         line-height: 22px
-        em
+        a
+          text-decoration: none
+          color: $dark_red
           font-weight: 700
-          font-style: normal
+          &:hover
+            color: $red
     &#rewards
       background: $light_brown
       line-height: 24px
@@ -127,6 +130,9 @@ body
         padding-left: 40px
         counter-reset: rewards_counter
         li
+          .title
+            color: $dark_brown
+            font-weight: 700
           margin-bottom: 16px
           &:before
             content: counter(rewards_counter)
