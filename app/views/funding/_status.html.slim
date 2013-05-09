@@ -1,0 +1,22 @@
+.block#status
+  .container
+    .content
+      .goal
+        .number
+          = "R$ #{@goal}"
+          span.per_month= "/mês"
+        .text é nossa meta
+      .current_amount
+        .number.to_go
+          = "R$ #{@current_amount}"
+          span.per_month= "/mês"
+        .text é o que já temos
+      .total_backers
+        .number.success
+          = "#{@total_backers}"
+        .text
+          | são 
+          a.anchor href="#backers" nossos apoiadores
+      p.observations
+        a.anchor href="#about_goal" Não precisamos atingir a meta para começar e não há um prazo para alcançá-la
+        | . Cada apoio que recebermos vai permitir que dediquemos um pouco mais de tempo ao tango e à comunidade. Um passo por vez, a gente chega lá! :D
