@@ -32,7 +32,12 @@ html
       #logo
         = link_to image_tag('logo.jpg', alt: "Laura Rosa + Daniel Weinmann = Ganas", title: "Laura Rosa + Daniel Weinmann = Ganas"), :root
       #social
-        .fb-like data-href="https://www.facebook.com/ganastango" data-send="true" data-width="380" data-show-faces="true" data-font="arial"
+        h4 Inscreva-se no nosso canal do
+        .subscribe
+          = image_tag "youtube.png"
+          .subscribe_button
+            iframe src="http://www.youtube.com/subscribe_widget?p=ganastango" style="overflow: hidden; height: 96px; width: 300px; border: 0;" scrolling="no" frameBorder="0"
+        /.fb-like data-href="https://www.facebook.com/ganastango" data-send="true" data-width="380" data-show-faces="true" data-font="arial"
     #content
       a#back_to_top.anchor href="#header" Topo
       = yield
