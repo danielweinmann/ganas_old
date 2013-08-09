@@ -1,0 +1,29 @@
+@import compass/css3
+@import compass/utilities
+@import 960/grid
+@import standards/colors
+
+body
+  .block
+    &#banner
+      background: $black
+      color: $gray
+      padding: 20px 0
+      .tagline
+        +grid(4)
+        +alpha
+        h1
+          height: 318px
+      .image
+        +grid(8)
+        +omega
+        img
+          width: 614px
+          border: 3px solid $white
+    &#videos
+      background: $blue
+      iframe
+        border: 3px solid $dark_blue
+        margin-bottom: 40px
+        &.last
+          margin-bottom: 0

@@ -1,4 +1,4 @@
 Ganas::Application.routes.draw do
-  root to: "funding#index"
-  resources :funding, only: [:index]
+  root to: "classes#index"
+  resources :classes, only: [:index]
 end
