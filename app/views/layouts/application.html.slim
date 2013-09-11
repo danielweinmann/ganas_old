@@ -28,18 +28,19 @@ html
         js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=165877740121884";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    #header
-      #logo
-        = link_to image_tag('logo.jpg', alt: "Laura Rosa + Daniel Weinmann = Ganas", title: "Laura Rosa + Daniel Weinmann = Ganas"), :root
-      #social
-        h4
-          | Inscreva-se no 
-          a href="https://www.youtube.com/ganastango" target="_blank" nosso canal
-          |  do
-          a href="https://www.youtube.com/ganastango" target="_blank"= image_tag "youtube.png"
-          .subscribe_button
-            iframe src="http://www.youtube.com/subscribe_widget?p=ganastango" style="overflow: hidden; height: 96px; width: 300px; border: 0;" scrolling="no" frameBorder="0"
-        /.fb-like data-href="https://www.facebook.com/ganastango" data-send="true" data-width="380" data-show-faces="true" data-font="arial"
+    #header_container
+      #header
+        #logo
+          = link_to image_tag('logo.jpg', alt: "Laura Rosa + Daniel Weinmann = Ganas", title: "Laura Rosa + Daniel Weinmann = Ganas"), :root
+        #social
+          h4
+            | Inscreva-se no 
+            a href="https://www.youtube.com/ganastango" target="_blank" nosso canal
+            |  do
+            a href="https://www.youtube.com/ganastango" target="_blank"= image_tag "youtube.png"
+            .subscribe_button
+              iframe src="http://www.youtube.com/subscribe_widget?p=ganastango" style="overflow: hidden; height: 96px; width: 300px; border: 0;" scrolling="no" frameBorder="0"
+          /.fb-like data-href="https://www.facebook.com/ganastango" data-send="true" data-width="380" data-show-faces="true" data-font="arial"
     #content
       a#back_to_top.anchor href="#header" Topo
       = yield
